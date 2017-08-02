@@ -1,0 +1,394 @@
+*{
+	font-family: Helvetica Neue;
+}
+
+a{
+	color: #000000;
+}
+
+.header{
+	background-color: #fafafa;
+	
+	.logo{
+		width: 30%;
+		height: 80px;
+		float: left;
+
+		h1{
+			span{
+				color: #3ba654;
+			}
+		}
+	}
+
+	.menu{
+		width: 70%;
+		height: 80px;
+		float: right;
+
+		ul{
+			float: right;
+			width: 100%;
+			li{
+				float: right;
+				list-style-type: none;
+				font-size: 16pt;
+				a{
+					float: left;
+					margin: 0px 1px;
+					padding: 10px;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}	 
+
+.search{
+	margin-top: 1%;
+	background-color: #F6F6F6;
+
+	h2{
+		margin-bottom: 10px;
+		margin-top: 10px;
+		width: 100%;
+		color: #000000;
+	}
+
+	form{
+		width: 100%;
+		padding-bottom: 20px;
+		table{
+			tr{
+				td{
+					select{
+						margin-right: 5px;
+						width: 180px;
+						height: 30px;
+						border: none;
+						font-size: 14pt;
+					}
+
+					input[type=submit]{
+						margin-top: 2%;
+						width: 135px;
+						height: 40px;
+						border: none;
+						background-color: #3ba654;
+						border: 1px solid #e6e6e6;
+						color: #ffffff;
+					}
+				}
+			}
+		}
+	}
+}
+
+#pagination{
+	text-align: center;
+	position: absolute;
+	z-index: 99;
+	margin-left: 48%;
+	margin-top: 35%;
+	font-size: 16pt;
+	
+	a{
+		text-decoration: none;	
+		color: red;
+	}
+}
+
+.highlights{
+	margin-top: 1%;
+	background-color: #F6F6F6;	
+	h4{
+		padding-bottom: 10px;
+		padding-top: 10px;
+		margin-top: 10px;
+		width: 100%;
+		font-size: 15pt;
+		color: #000;
+		border-bottom: 2px solid fade(#3ba654,50%);
+	}
+
+	.imoveis{
+			ul{
+				list-style-type: none;
+
+				li{
+					float: left;
+					width: 23%;
+					margin-right: 2%;
+					margin-bottom: 2%;
+					padding-bottom: 1%;
+
+					.effect{
+						width: 3%;
+						height: 160px;
+						position: absolute;
+						background-color: fade(#FFFFFF, 90%);
+						opacity: 0.6;
+						text-align: center;
+						transition: 1s;
+
+						.effect-content{
+							opacity: 0;
+							position: relative;
+							color: #000000;
+							padding: 10px;
+							border: 2px solid #3ba654;
+							font-weight: bolder;
+							box-sizing: border-box;
+							top: 45%;
+							font-size: 13pt;
+							transition: 1.5s;
+						}
+
+						&:hover{
+								width: 15.7%;
+								opacity: 1;
+								transition: 1s;
+							.effect-content{
+								opacity: 1;
+								transition: 1.5s;
+							}
+						}
+					}
+
+					a{
+
+						text-decoration: none;
+					}
+					img{
+						width: 100%;
+						border-radius: 10px;
+					}
+
+					.tipo, .bairro, .valor, .quartos, .condominio{
+
+						margin: 0px;
+						padding: 2px;
+						font-size: 14pt;
+					}
+
+					.valor{
+						text-align: center;
+						margin-top: 2%;
+						padding: 10px 10px 10px 0px;
+						box-sizing: border-box;
+						color: fade(green, 90%);
+						border-left: 2px solid #3ba654;
+						border-right: 2px solid #3ba654;
+						background-color: #F7F7F7;
+					}
+				}
+			}
+		}
+}
+
+.footer{
+	width: 100%;
+	background-color: #3ba654;
+
+	a{
+		text-decoration: none;
+	}
+	.logo{
+		float: left;
+		width: 21%;
+		h1{
+			span{
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	.sobre-empresa{
+		margin-top: 1%;
+		color: #FFFFFF;
+		float: left;
+
+		.endereco, .email, .telefone{
+			padding-left: 3px solid #FFFFFF;
+			margin: 0px;
+			margin-left: 15%;
+			font-size: 14pt;
+			letter-spacing: 2px;
+		}
+	}
+
+	.social{
+		float: right;
+		width: 30%;
+
+		img{
+			padding-top: 6%;
+			padding-bottom: 5%;
+			float: right;
+			margin-left: 2%;
+			width: 50px;
+			height: 50px;
+		}
+	}
+}
+
+/*	 lista.html	*/
+.lista{
+	ul{
+
+		li{
+			margin-bottom: 2%;
+			list-style-type: none;
+			height: 200px;
+			background-color: #f7f7f7;
+			border: 1px solid #3ba654;
+			text-align: center;
+
+			.effect{
+				position: absolute;
+				border: 30px;
+				width: 267px; 	//267 o ideal
+				height: 20px;	//200 a ideal
+				background-color: fade(#3ba654, 60%);
+				transition: 1s;
+				opacity: 1;
+
+				&:hover{
+					transition: 1s;
+					height: 200px;
+
+					a{
+						opacity: 1;
+						transition: 1.5s;
+					}
+				}
+
+				a{
+					transition: 1s;
+					opacity: 0;
+					text-decoration: none;
+					position: relative;
+					top: 45%;
+					font-size: 17pt;
+					color: #FFFFFF;
+					padding: 10px;
+					border: 1px solid #FFFFFF;
+				}
+			}
+
+			p{
+				margin: 0px;
+				padding: 0px;
+			}
+
+			.codigo{
+				padding-top: 10%;
+				font-size: 13pt;
+			}
+
+			.tipo{
+				font-size: 13pt;
+			}
+
+			.bairro{
+				font-size: 13pt;
+			}
+		}
+
+		#infos{
+			width: 300px;
+			margin-left: 2%;
+			margin-top: 4%;
+			float: left;
+		}
+
+		#valor{
+			border-right: 3px solid #3ba654;
+			background-color: #ffffff;
+			float: right;
+			width: 300px;
+			height: 100%;
+			text-align: center;
+
+			.valor{
+					margin-top: 21%;
+					font-size: 15pt;
+					color: #000;
+					padding-bottom: 20px;
+					color: fade(#D50000, 80%);
+			}
+
+			a{
+				color: #000000;
+				text-decoration: none;
+				font-size: 13pt;
+				padding: 10px;
+				box-sizing: border-box;
+				border: 1px solid #3ba654;
+
+				&:hover{
+					color: #FFFFFF;
+					background-color: fade(#D50000, 80%);
+					border: none;
+				}
+			}
+		}
+
+		img{
+			float: left;
+			height: 100%;
+		}
+	}
+}
+
+/*	 contato.html	*/
+.formulario{
+	border-top: 2px solid #000;
+	height: 450px;
+	font-size: 15pt;
+
+	h1{
+		color: #000000;
+	}
+
+	input{
+		margin-top: 1%;
+		padding: 10px;
+		width: 100%;
+		border: 1px solid #000000;
+	}
+
+	.enviar{
+		background-color: #FFFFFF;
+		color: #000000;
+	}
+}
+
+
+/*	imovel.html */
+.edificio{
+	margin-bottom: 1%;
+	.topo{
+		height: 60px;
+		background-color: fade(#3ba654, 70%);
+		width: 100%;
+		h3{
+			margin-top: 15px;
+			float: left;
+			color: #FFFFFF;
+			font-size: 20pt;
+		}
+
+		.valor{
+			margin-top: 15px;
+			color: #FFFFFF;
+			font-size: 20pt;
+			float: right;
+			color: #FFFFFF;
+
+			span{
+				color: #000000;
+			}
+		}
+	}
+}
